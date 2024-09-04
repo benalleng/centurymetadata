@@ -1,7 +1,7 @@
 #! /bin/sh
 # Script to setup / update centurymetadata dir min/maxdepth
 
-BASEDIR=/home/rusty/data/centurymetadata/
+BASEDIR=~/Documents/Coding/Projects/centurymetadata/
 
 if [ ! -d "$BASEDIR" ]; then
     mkdir "$BASEDIR"

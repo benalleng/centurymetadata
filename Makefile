@@ -42,3 +42,7 @@ upload: web/index.html python/centurymetadata/server/server.py
 run-local: 
 	@echo "Starting local server..."
 	@python3 -m http.server 8000 --directory web/
+
+run-api:
+	@echo "Starting api server..."
+	cd python/centurymetadata/server && python3 -m http.server --cgi 8001
