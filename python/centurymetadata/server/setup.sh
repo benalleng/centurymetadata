@@ -1,7 +1,8 @@
 #! /bin/sh
 # Script to setup / update centurymetadata dir min/maxdepth
 
-BASEDIR=~/Documents/Coding/Projects/centurymetadata/
+BASEDIR=$(dirname "$(realpath "$0")")
+BASEDIR=$(realpath "$BASEDIR/../../..")
 
 if [ ! -d "$BASEDIR" ]; then
     mkdir "$BASEDIR"

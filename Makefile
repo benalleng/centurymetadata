@@ -46,3 +46,8 @@ run-local:
 run-api:
 	@echo "Starting api server..."
 	cd python/centurymetadata/server && python3 -m http.server --cgi 8001
+
+run-servers:
+	@echo "Starting local and api servers..."
+	@make run-local &
+	@make run-api
